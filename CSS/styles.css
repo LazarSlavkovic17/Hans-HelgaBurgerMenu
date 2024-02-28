@@ -1,0 +1,455 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2, h3, p{
+    margin-bottom: 5px;
+}
+
+.home {
+    background-image: url("../images/Burgernaslovna.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.home-div {
+    height: 90vh;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.small-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: #22447b;
+}
+
+.menu-center {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 20px;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #22447b;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.button:hover, .button:focus, .button:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    background-color: #de9254;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.site-container {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+.article-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.article-image {
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.artile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.article-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    border-style: solid;
+    border-color: orange;
+    background-color: #f0f4fb
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.6);
+    cursor: pointer;
+    background-color: #f0f4fb
+}
+
+.article-content {
+    padding: 2rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f0f4fb;
+}
+
+.article-content .card-category {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: orange;
+    display: block;
+    text-decoration: none;
+    background-color: #f0f4fb
+}
+
+.article-content .card-title {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 1rem 1rem 0;
+    color: orange;
+    background-color: #f0f4fb
+}
+
+.article-content .card-paragraph {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: #22447b;
+    margin: 0;
+    background-color: #f0f4fb
+}
+
+.article-content .card-paragraph2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #22447b;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #f0f4fb
+}
+
+img {
+    width: 100%;
+    height: 110%;
+}
+
+.burgers {
+    font-size: 40px;
+    color: #22447b;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .site-container {
+        max-width: 1000px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 240px 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+    .site-container {
+        max-width: 1156px;
+    }    
+}
+
+.card {
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: orange;
+    display: block;
+    text-decoration: none;
+    background-color: #f0f4fb;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-title2 {
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: orange;
+    background-color: #f0f4fb;
+    display: flex;
+    justify-content: center;
+}
+
+.card-paragraph3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;;
+    line-height: 1.5rem;
+    color: #22447b;
+    margin: 1rem 2rem 1rem 2rem;
+    background-color: #f0f4fb;
+    text-align: center;
+}
+
+.card-paragraph4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #22447b;
+    margin: 1rem 1rem 1rem 1rem;
+    padding-top: 0;
+    background-color: #f0f4fb;
+    display: flex;
+    justify-content: center;
+}
+
+.card-menu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1280px)
+{
+    .card-menu {
+        max-width: 1156px;
+    }    
+}
+
+.without-photo {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    border-style: solid;
+    border-color: orange;
+    background-color: #f0f4fb;
+    border-radius: 20px;
+}
+
+footer {
+    bottom: 0;
+}
+
+@media (max-height:800px)
+{
+    footer {
+        position: static;
+    }
+}
+
+.bigfooter {
+    background-color: #de9254;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 40px 40px 40px;
+    margin-top: 80px;
+}
+
+.bigfooter .footer-left, .bigfooter .footer-center, .bigfooter .footer-right {
+    display: inline-block;
+}
+
+.bigfooter .footer-left {
+    width: 30%;
+}
+
+.bigfooter .footer-left p {
+    color: white;
+    font-size: 24px;
+}
+
+.bigfooter .footer-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.bigfooter h3 {
+    color: white;
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.bigfooter .socials {
+    color: white;
+    margin: 20px 0 12px;
+}
+
+.bigfooter .socials a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.bigfooter .company-name {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.bigfooter .footer-center {
+    width: 35%;
+}
+
+.bigfooter .footer-center p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.bigfooter .footer-right {
+    width: 30%;
+}
+
+.bigfooter .address .address2 {
+    line-height: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bigfooter .socials {
+    margin-top: 25px;
+}
+
+.bigfooter .socials a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #de9254;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.bigfooter .socials a:hover {
+    background-color: #22447b;
+}
+
+@media (max-width: 880px) {
+    .bigfooter .footer-left, .bigfooter .footer-center, .bigfooter .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .bigfooter .footer-center i {
+        margin-left: 0;
+    }
+    .button {
+        font-size: 15px;
+        width: 100px;
+        padding: 12px;
+    }
+    .name {
+        font-size: 35px;
+        letter-spacing: 2px;
+        padding: 0;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:468px){
+    .name {
+        background-color: #22447b8f;
+    }
+}
